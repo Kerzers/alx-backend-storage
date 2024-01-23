@@ -1,3 +1,12 @@
-// Write a script that lists all documents with name starting by Holberton
-// in the collection school
-db.school.find({"name": { $regex: /^Holberton/ }})
+#!/usr/bin/env python3
+"""
+Where can I learn Python?
+"""
+import pymongo
+
+
+def schools_by_topic(mongo_collection, topic):
+    """
+    find by specific value
+    """
+    return mongo_collection.find({"topics":  {"$in": [topic]}})
