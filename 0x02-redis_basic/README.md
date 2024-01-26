@@ -1,0 +1,1 @@
+This ptoject is about Redis basics
